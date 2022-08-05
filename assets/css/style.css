@@ -1,0 +1,1290 @@
+/* reset */
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, 
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;   
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul,li {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button, input, textarea, select, a {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+}
+
+img, embed, object, video {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+} 
+
+
+
+/* fontes */
+@font-face {
+    font-family: 'opensans-light';
+    src: url('../fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+    font-family: 'opensans-regular';
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'opensans-semibold';
+    src: url('../fonts/OpenSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'opensans-bold';
+    src: url('../fonts/OpenSans-Bold.ttf');
+}
+
+
+
+/* conteúdo */
+html {
+    font-size: 100%;
+    color: #1d1d1d; 
+    font-family: 'opensans-regular';
+    line-height: 1.5;
+    text-align: center;
+} 
+
+::-moz-selection {
+    background-color: #2cda9b;
+    color: #fff;
+} 
+
+::selection {
+    background-color: #2cda9b;
+    color: #fff;
+}
+
+.banner,
+.box {
+    position: relative;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.banner-home,
+.box {
+    background-image: url("../images/banners/ditalent-home.jpg");
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.banner-title h1 {
+    font-family: 'opensans-bold';
+    font-size: 2.8rem;
+    color: #481c8f;
+}
+
+.banner-title,
+.box > div,
+#newsletterModal > div,
+#mensagemModal > div,
+.social-media, 
+.search-icon {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+.banner-title,
+.box > div,
+#newsletterModal > div,
+#mensagemModal > div {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;  
+}
+
+.banner-title,
+.box > div,
+#newsletterModal > div,
+#mensagemModal > div,
+.content {
+    width: 40vw;
+}
+
+#companies,
+#talents {
+    min-height: 100vh; 
+}
+
+header, 
+header .avatar,
+.wrap,
+.carousel-wrap,
+.box-flex, 
+.box-anchor,
+.search-bar,
+.talent-wrap,
+.company-wrap,
+.edit-wrap,
+#box-edit,
+.wrap figure div,
+.wrap figure a,
+.box-form,
+.contacts-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+header,
+footer, 
+.container,
+.box > div,
+#newsletterModal > div,
+#mensagemModal > div {
+    padding: 4rem;
+}
+
+header .login a,
+footer ul li,
+.hiperlink, 
+.see-more button,
+.wrap figure h4,
+.wrap figure h2,
+.box-content button,
+.contacts-send button, 
+.edit-send button,
+.box-anchor a,
+#dropdownContent ul li,
+.talent-wrap p,
+.talent-wrap a,
+.company-wrap p,
+.company-wrap a,
+.upload-image,
+#cookiesClose,
+#cookiesMensage p {
+    font-size: 1.4rem;
+}
+
+footer p,
+.box-form label,
+.box-form input,
+.contacts-form label,
+.edit-form label,
+.edit-form input,
+.contacts-form input,
+.contacts-form textarea,
+.edit-form input, 
+.edit-form textarea,
+#mensagemModal textarea,
+.box-content p,
+.box-content a,
+.category select,
+.search input,
+.edit-category select,
+#fileName,
+.error-message,
+.error-email,
+.box-form textarea,
+.avatar p {
+    font-size: 1.3rem;
+}
+
+header .login a,
+footer ul li,
+footer ul li a,
+footer li,
+footer p,
+footer a,
+.hiperlink, 
+.see-more button,
+.wrap figure h3,
+.wrap figure h4,
+.wrap figure h1,
+.wrap figure h2,
+#dropdownContent ul li a,
+.box-anchor a,
+.box-content button,
+.contacts-send button, 
+.edit-send button,
+.social-media a,
+.upload-image,
+.edit-category select,
+.category select,
+.box-anchor a:hover,
+#cookiesClose {
+   color: #fff;  
+}
+
+footer .copyright,
+footer .social-media-mobile,
+.box-form label,
+.contacts-form label,
+.box-content button,
+.contacts-send button, 
+.edit-send button,
+.box-content p,
+.box-content a,
+#cookiesClose,
+.error-message,
+.error-email,
+.box-form .edit-image {
+    margin-top: 2.5rem;
+}
+
+.hiperlink, 
+.see-more button,
+.box-content button, 
+.edit-send button,
+.contacts-send button:hover,
+#newsletterModal .newsletter-button button:hover,
+.edit-category select,
+#cookiesClose {   
+    background-color: #2cda9b; 
+    border: 1px solid #2cda9b;
+}
+
+.hiperlink:hover,
+.see-more button:hover,
+.box-content button:hover,
+.edit-send button:hover,
+.contacts-send button,
+#newsletterModal .newsletter-button button,
+#cookiesClose:hover {    
+    background-color: #481c8f;
+    border: 1px solid #481c8f;
+}
+
+footer,
+header .login a:hover,
+#dropdownContent,
+.social-media,
+.box-anchor a:hover,
+.search-bar,
+.category select {
+    background-color: #481c8f;
+}
+
+header .navbar ul li a,
+.container h2,
+#newsletterClose .fas,
+#mensagemClose .fas:hover,
+.box-content a:hover,
+.search-icon .fas,
+.profile-dropdown .fas {
+    color: #481c8f;
+}
+
+header .navbar ul li a.active, 
+header .navbar ul li a:hover, 
+.wrap figure h3,
+.wrap figure h1,
+#newsletterClose .fas:hover,
+#mensagemClose .fas,
+.box-content a,
+.talent-wrap a,
+.company-wrap a,
+.talent-wrap h1,
+.talent-wrap h3, 
+.company-wrap h1,
+#fileName,
+.error-email {
+    color: #2cda9b;
+}  
+
+header .navbar ul li,
+header .login a,
+.hiperlink, 
+.see-more button,
+.wrap figure h3,
+.wrap figure h1,
+.box-content button,
+.contacts-send button, 
+.edit-send button,
+.box-anchor a,
+.talent-wrap h1,
+.talent-wrap h3, 
+.company-wrap h1,
+.talent-wrap h2,
+#fileName,
+#cookiesClose,
+.box-form textarea {
+    font-family: 'opensans-semibold';    
+}
+
+.box-form input,
+.contacts-form input,
+.contacts-form textarea,
+.edit-form input, 
+.edit-form textarea,
+#mensagemModal textarea,
+.search input,
+.edit-category select,
+.box-form textarea {
+    font-family: 'opensans-light';
+} 
+
+header .login a,
+.hiperlink, 
+.see-more button,
+.box-content button,
+.contacts-send button, 
+.edit-send button,
+.box-anchor a,
+.upload-image,
+#cookiesClose {    
+    text-transform: uppercase;
+}
+
+.hiperlink, 
+.see-more button {      
+    padding: 10px 20px;    
+    margin-top: 3rem;   
+}
+
+.hiperlink {
+    display: inline-block;    
+}
+
+.see-more button {       
+    cursor: pointer;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.main-top {
+    margin-top: 2rem;
+}
+
+.top-extra {
+    margin-top: 8rem;
+}
+
+.top-header {
+    margin-top: 171px;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h2 {
+    font-family: 'opensans-bold';
+    font-size: 2.2rem;
+}
+
+.container p {
+    font-size: 1.5rem;
+}
+
+.content {
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.wrap,
+.carousel-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.wrap-content {
+    width: 25%;
+}
+
+.wrap figure {
+    position: relative;
+}
+
+.wrap figure div,
+.wrap figure a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;  
+    -webkit-box-orient: vertical;  
+    -webkit-box-direction: normal;  
+        -ms-flex-direction: column;  
+            flex-direction: column; 
+}
+
+.wrap figure div {
+   background-color: rgba(0,0,0,0); 
+}
+
+.wrap figure:hover div {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.wrap figure h3,
+.wrap figure h4,
+.wrap figure h1,
+.wrap figure h2 {
+    opacity: 0;    
+    padding: 0 1rem;
+}
+
+.wrap figure:hover h3,
+.wrap figure:hover h4,
+.wrap figure:hover h1,
+.wrap figure:hover h2 {
+    opacity: 1;
+}
+
+.wrap figure h3,
+.wrap figure h1 {
+    font-size: 1.7rem;
+}   
+
+#home p,
+#contacts p, 
+#about p {
+    margin: 3rem 0;
+}
+
+#wrapMore {
+    display: none;
+}
+
+
+
+/* formulários */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #787878;
+    font-family: 'opensans-light';
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #787878;
+    font-family: 'opensans-light';   
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #787878;
+    font-family: 'opensans-light';
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+    color: #787878;
+    font-family: 'opensans-light';
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #787878;
+    font-family: 'opensans-light';
+}
+
+.box-form,
+.contacts-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.box-form label,
+.contacts-form label {
+    text-align: left;
+    margin-bottom: 0.8rem;
+}
+
+.box-form input,
+.contacts-form input,
+.contacts-form textarea,
+.edit-form input, 
+.edit-form textarea,
+#mensagemModal textarea,
+.box-form textarea {
+    padding: 14px; 
+} 
+
+#cookiesClose,
+.box-content button,
+.contacts-send button, 
+.edit-send button {
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.box-form input,
+.edit-form input, 
+.edit-form textarea,
+#mensagemModal textarea,
+.box-form textarea {
+    border: 1px solid #2cda9b;
+} 
+
+.contacts-form textarea, 
+#mensagemModal textarea,
+.box-form textarea {
+    height: 150px;
+}
+
+.edit-form textarea {
+    height: 200px;
+}
+
+.contacts-form input,
+.contacts-form textarea,
+#newsletterModal input {
+    border: 1px solid #481c8f;
+} 
+
+.box > div,
+#newsletterModal > div,
+#mensagemModal > div {
+    background-color: #fff;
+}
+
+.box-form .edit-image {
+	width: 50%;
+    margin: auto;
+    margin-top: 2.5rem;
+}
+
+.box-scroll {
+	overflow-y: scroll;
+   	max-height: 500px;
+}
+
+.box .box-scroll::-webkit-scrollbar-thumb {
+    background: #95d2e5 !important;
+}
+
+.error-message {
+    text-align: left;
+}
+
+
+
+/* header */
+header, 
+header .avatar {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; 
+}
+
+header {
+    position: absolute;
+    top: 0;  
+    width: 100%;
+    z-index: 100;
+    height: 171px;
+} 
+
+header .logo {
+    width: 14rem;
+    margin-right: auto;
+}
+
+header .navbar ul li {
+    display: inline;
+    font-size: 1.6rem;
+    margin-left: 3rem;
+}
+
+header .login {
+    margin-left: 3rem;
+}
+
+header .login a { 
+    background-color: #2cda9b; 
+    padding: 10px 20px;   
+}
+
+header .avatar {
+    margin-left: 3rem;
+}
+
+header .avatar p {
+    margin-right: 1rem;
+} 
+
+header .avatar img {
+    width: 3rem;
+}
+
+.header-scroll {
+    position: fixed;
+    background-color: #fff;
+    padding: 2rem 4rem; 
+    height: unset;
+}
+
+/* header perfil dropdown */
+.profile-dropdown { 
+    position: relative;
+}
+
+.profile-dropdown button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0;
+}
+
+.profile-dropdown .fas {
+    font-size: 2.4rem;
+}
+
+#dropdownContent {
+    position: absolute;
+    padding: 3rem;
+    top: 4rem;
+    right: 0;
+    z-index: 100;
+    display: none; 
+    width: 26.5rem;
+}
+
+#dropdownContent ul li {
+    text-align: left;
+    line-height: 3;
+}
+
+#dropdownContent ul li a.active {
+    border-bottom: 3px solid #fff;
+    padding-bottom: 5px;
+}
+
+    
+
+/* footer */
+footer ul li {
+    display: inline;
+    padding: 0 1rem;
+}
+
+footer ul li a.active {
+    font-family: 'opensans-bold';   
+}
+
+footer .social-media-mobile {
+    display: none;
+}
+
+footer .social-media-mobile .fab {
+    font-size: 1.8rem;
+    padding: 0 1rem;
+}
+
+
+
+/* social media */
+.social-media {
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    padding: 1.1rem;
+} 
+
+.social-media a {
+    display: block;
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    -webkit-transition: all 0.5s cubic-bezier(0, 0, 0, 1);
+    -o-transition: all 0.5s cubic-bezier(0, 0, 0, 1);
+    transition: all 0.5s cubic-bezier(0, 0, 0, 1);
+}
+
+.social-media a:hover {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+
+
+/* modal newsletter */
+#newsletterModal,
+#mensagemModal {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   z-index: 200;
+   background-color: rgba(0, 0, 0, 0.8);
+   display: none;
+}
+
+#newsletterClose,
+#mensagemClose {
+    text-align: right;
+}
+
+#newsletterClose button,
+#mensagemClose button,
+#newsletterClose button:hover,
+#mensagemClose button:hover {
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin-top: 0;
+    padding: 0;
+}
+
+#newsletterClose .fas,
+#mensagemClose .fas,
+.home-icon .fas {
+    font-size: 2.2rem; 
+    cursor: pointer;   
+}
+
+#newsletterBtn {
+    cursor: pointer;
+}
+
+
+
+/* mensagem cookies */
+#cookiesMensage {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    background-color: #fff;
+    padding: 2rem 4rem;
+}
+
+#cookiesMensage > div:first-child {
+    margin-right: auto;
+}
+
+
+
+/* páginas entrar e registar */
+.box-content h1 {       
+    font-size: 2rem;
+}
+
+.box-content a:first-child {
+    margin-right: auto;
+}
+
+.box-anchor a {
+    padding: 10px 20px;
+    background-color: #2cda9b;
+}
+
+.box-privacity {
+    font-size: 1.2rem;
+    text-align: left;
+    padding-top: 2.5rem;
+}
+
+.home-icon {
+    text-align: right;
+}
+
+.box-anchor-extra a {
+    color: #fff !important;
+}
+
+
+
+/* contactos */
+.banner-contacts {
+    background-image: url("../images/banners/ditalent-contacto.jpg");    
+}
+
+
+
+/* sobre */
+.banner-about {
+    background-image: url("../images/banners/ditalent-sobre.jpg"); 
+}
+
+#about > div {
+    margin-top: 2rem;
+}
+
+
+
+/* talentos */
+.search-bar {
+    padding: 2rem 4rem;
+}
+
+.category select {
+    border: 1px solid #fff;
+    cursor: pointer;
+    padding: 6px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    padding: 5px 30px 5px 10px;
+    border: 1px solid transparent;
+}
+
+.search-icon {
+    position: absolute;
+    right: 0;
+}
+
+.search-icon button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.search-icon .fa {
+    font-size: 1.8rem;
+}
+
+
+
+/* páginas empresa, talento, editar empresa e editar talento */
+.talent-left,
+.company-left,
+.edit-left {
+    width: 30%;
+}
+
+.talent-right,
+.company-right,
+.edit-right {
+    width: 70%;    
+}
+
+.talent-right > div,
+.company-right > div,
+.edit-right > div {
+    padding-left: 12rem;
+}
+
+.talent-wrap h1, 
+.company-wrap h1 {
+    font-size: 1.9rem;
+}
+
+.talent-wrap p,
+.talent-wrap a,
+.company-wrap p,
+.company-wrap a {
+    margin-top: 1.5rem;
+}
+
+.talent-wrap a,
+.company-wrap a {
+    display: block;
+}
+
+.talent-right,
+.company-right {
+    text-align: left;
+}
+
+#talent, 
+#company, 
+#edit, 
+#box-edit {
+    min-height: calc(100vh - 171px);
+}
+
+#talents {
+    min-height: calc(100vh - 275px);
+}
+
+#box-edit {
+    padding: 4rem 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+#box-edit .box-content {
+    width: 30vw;
+}
+
+
+
+/* talento */
+.talent-wrap h1 {    
+    margin-top: 3rem;
+}
+
+.talent-wrap h2 {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    color: #1d1d1d;
+}
+
+.talent-wrap h3 { 
+   font-size: 1.7rem;
+}
+
+.talent-right div:nth-child(2),
+.talent-right div:nth-child(3) {
+    margin-top: 4rem;
+}  
+
+.hide {
+    display: none;
+}   
+
+
+
+/* páginas editar talento e editar empresa */
+.edit-category select {
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.edit-form {
+    margin-bottom: 2.5rem;
+}
+
+.edit-wrap {
+    text-align: left;
+}
+
+.edit-form input, 
+.edit-form textarea {
+    width: 100%;
+    margin-top: 0.8rem;
+}
+
+.edit-image {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.upload-image,
+#fileName {
+    position: absolute;
+    right: 0;
+    left: 0; 
+    text-align: center;
+}
+
+.upload-image {    
+    bottom: 4rem;    
+    background-color: #2cda9b;   
+}
+
+.upload-image [type=file] {
+    filter: alpha(opacity=0);
+    opacity: 0;
+} 
+
+#fileName {
+    bottom: 1rem;
+} 
+
+.upload-image input {
+	width: 0;
+	padding: 0 !important;
+}
+
+
+
+/* media queries */
+@media (max-width: 2000px) {
+
+    /* conteúdo */ 
+    html {
+        font-size: 70%;
+    }
+
+    #talent, 
+    #company, 
+    #edit, 
+    #box-edit {
+        min-height: calc(100vh - 120px);
+    }
+
+    #talents {
+        min-height: calc(100vh - 197px);
+    }
+
+    .top-header {
+        margin-top: 120px;
+    }
+
+
+    /* header */     
+    header {
+        height: 120px;
+    }
+   
+}
+
+
+@media (max-width: 1199px) {
+   
+    /* conteúdo */
+    .banner-title, 
+    .box > div, 
+    #newsletterModal > div, 
+    #mensagemModal > div,
+    #box-edit .box-content,
+    .content {
+        width: 60vw;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    /* conteúdo */
+    .banner-title, 
+    .box > div, 
+    #newsletterModal > div, 
+    #mensagemModal > div,
+    #box-edit .box-content,
+    .content {
+        width: 80vw;
+    }
+  
+    .wrap-content {
+        width: 50%;
+    } 
+
+    .wrap figure h3, 
+    .wrap figure h4,
+    .wrap figure h1,
+    .wrap figure h2 {
+        opacity: 1;
+    }
+
+    .wrap figure div,
+    .wrap figure:hover div {
+        background-color: rgba(0,0,0,0.5);
+    }
+
+
+    /* header */
+    header .navbar {
+        position: fixed;
+        bottom: 0;
+        background-color: #fff;
+        left: 0;
+        right: 0;
+        padding: 1rem 0;
+    }
+
+    header .navbar ul li {
+        margin: 0 2rem;
+    }
+  
+
+    /* páginas empresa, talento, editar empresa e editar talento */
+    .talent-wrap, 
+    .company-wrap, 
+    .edit-wrap {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .talent-left, 
+    .company-left, 
+    .edit-left, 
+    .talent-right, 
+    .company-right, 
+    .edit-right {
+        width: 100%;
+    }
+
+    .talent-right > div, 
+    .company-right > div, 
+    .edit-right > div {
+        padding-left: 0;
+    }
+
+    .talent-right > div, 
+    .company-right > div {
+        text-align: center;
+    }
+
+    .talent-right div:first-child,
+    .company-right {
+        margin-top: 4rem;
+    } 
+
+    .edit-form {
+        margin-bottom: 0; 
+        margin-top: 2.5rem;
+    }
+
+    .text-right {
+        text-align: center;
+    }  
+
+}
+
+
+@media (max-width: 575px) { 
+   
+    /* conteúdo */ 
+    .banner-title,
+    .content {
+        width: unset;
+    }  
+
+    .banner-title {
+        padding: 0 2rem;
+    }
+
+    .container,
+    .header-scroll,
+    .box > div, 
+    #newsletterModal > div, 
+    #mensagemModal > div, 
+    #box-edit .box-content  {
+        padding: 2rem;
+    }
+
+    .box > div, 
+    #newsletterModal > div, 
+    #mensagemModal > div, 
+    #box-edit .box-content {
+        width: 100vw;
+    }     
+
+    .wrap,
+    .box-flex, 
+    .box-anchor,
+    .search-bar {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .box a:first-child,
+    .category {
+        margin-right: unset;
+    }
+
+    .wrap-content {
+        width: 100%;
+    }  
+
+    .box-form .edit-image {
+		width: 100%;
+	}
+	
+
+    /* header */
+    header {
+        padding: 4rem 2rem;
+    }
+
+
+    /* footer */
+    footer ul li,
+    footer .social-media-mobile {
+        display: block;
+    }
+
+
+    /* social media desktop */
+    .social-media {
+        display: none;
+    }
+
+
+    /* home */
+    .carousel-wrap div:nth-child(2) {
+        display: none;
+    }
+
+
+    /* páginas editar talento e editar empresa */
+    #box-edit {
+        padding: 0;
+    }
+   
+      
+    /* página talentos */
+    .search-bar {
+        padding: 2rem;
+    }
+
+    .category {
+        margin-bottom: 2rem;
+    }
+
+    .category select,
+    .search input {
+        width: 100%;
+    }
+
+}
