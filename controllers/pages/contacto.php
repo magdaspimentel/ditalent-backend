@@ -76,13 +76,13 @@
         $mail->SMTPAuth = true;
 
         // dados da conta de envio de email  
-        $mail->Username = 'magda.pimentel.teste@gmail.com';
-        $mail->Password = 'testemagdapimentel';
+        $mail->Username = '';
+        $mail->Password = '';
 
         $mail->setFrom($contactEmail, $contactName);
 
         // destinatário
-        $mail->addAddress('magda.pimentel.teste@gmail.com', 'Ditalent');
+        $mail->addAddress('', 'Ditalent');
 
         $mail->isHTML(true); 
 
